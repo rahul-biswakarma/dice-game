@@ -17,6 +17,13 @@ body {
   width: 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.05' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
+
+@media (max-width: 600px) {
+  .dice {
+    flex-direction: column;
+  }
+}
+
 .dice {
   height: 70vh;
   align-items: center;
@@ -24,7 +31,7 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 2rem;
-  perspective: 600px;
+  perspective: 2000px;
 }
 
 .die-list {
@@ -109,6 +116,7 @@ body {
   flex-wrap: wrap;
   gap: 3rem;
   z-index: 30;
+  padding: 0 2rem;
 }
 
 button {
